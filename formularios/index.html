@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form>
+        <section id="dados_pessoais">
+            <div id="dados1">
+                <input type="text" placeholder="Digite seu nome" name="nome" id="nome">
+                <input type="date" name="data_nascimento" id="data_nascimento">
+            </div>
+
+            <div id="dados2">
+                <select name="genero" id="genero">
+                    <option value="default">Informe seu gênero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <select name="estado_civil" id="estado_civil">
+                    <option value="default">Informe seu estado civil</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="Viúvo(a)">Viúvo(a)</option>
+                </select>
+            </div>
+        </section>
+
+        <hr>
+
+        <div id="dados3">
+            <input type="number" name="salario" id="salario">
+            <div><label for="">Conta Corrente</label><input type="checkbox" name="CC" id="cc"></div>
+            <div><label for="">Conta Poupança</label><input type="checkbox" name="CP" id="cp"></div>
+            
+            
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</body>
+</html>

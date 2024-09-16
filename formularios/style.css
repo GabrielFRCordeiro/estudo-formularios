@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #ddddd6;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    background-color: var(--color-primary);
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dados_pessoais{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#dados1, #dados2{
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+}
+
+#nome, #data_nascimento, #genero, #estado_civil{
+    width: 49%;
+    height: 40%;
+    align-self: center;
+    padding: 5px;
+}
+
+hr{
+    width: 90%;
+    border-color: var(--color-primary);
+}
+
+#dados3{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#salario{
+    width: 30%;
+    height: 16%;
+}
+
+#dados3 div{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+#dados3 label{
+    font-size: 1.5em;
+}
+
+button{
+    width: 20%;
+    height: 16%;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    #dados1, #dados2, #dados3{
+        flex-direction: column;
+    }
+
+    #nome, #data_nascimento, #genero, #estado_civil, #salario{
+        width: 100%;
+    }
+
+    #dados3 div{
+        width: 65%;
+    }
+
+    button{
+        width: 30%;
+    }
+}
